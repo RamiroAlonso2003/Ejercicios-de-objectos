@@ -1,0 +1,21 @@
+import example.*
+
+describe "temporada 1" {
+
+  const malaria = new Infecciosas(celulasAmenazadas = 5000)
+	const otitis = new Infecciosas(celulasAmenazadas = 1000)
+	const lupus = new Infecciosas(celulasAmenazadas = 5000)
+	const otraMalaria = new Infecciosas(celulasAmenazadas = 80000)
+	const logan = new Persona(celulas = 30000000000, temperatura=37)
+	const frank = new Persona(celulas = 3500000000000, temperatura = 36)
+	/*const cameron = new Medico(dosis = 100, celulas = 10000000, temperatura = 37)
+	const cuddy = new JefeDeDepartamento(subordinados = #{cameron}, dosis = 80, cantCelulas = 500000, temperatura = 36)
+	*/
+
+  test "Hacer que una persona contraiga una enfermedad. (Por ejemplo, que Frank contraiga la enfermedad del item b)." {
+    frank.contraeEnfermedad(malaria)
+    assert.equals(frank.tieneEnfermedad(malaria), true)
+    
+  }
+
+}
