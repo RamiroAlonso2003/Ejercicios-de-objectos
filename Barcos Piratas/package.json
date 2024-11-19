@@ -1,10 +1,10 @@
 {
-  "name": "Afecciones",
+  "name": "Objetos",
   "version": "1.0.0",
   "wollokVersion": "4.0.0",
   "author": "ralon",
   "license": "ISC",
   "dependencies": {
-    "Afecciones": "file:"
+    "Objetos": "file:"
   }
 }
